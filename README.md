@@ -52,10 +52,8 @@ Inside the data directory, there is a file called "users.csv". This file contain
 
 Identify users that have email addresses with six or less characters before the @ symbol where none of these characters are numbers.
 ```
-grep -E '\D{1,6}@' data/users.csv 
+grep -E ',[^0-9]{1,6}@' data/users.csv 
 ```
-
-[//]: # (This solution triggers for things like mda7rw@ as well)
 
 Marketing research has shown that the paper business is picking up in the academia space. Corporate has requested a list of all registered users that have an edu emaill address. Use grep to find the appropriate lines and output the results to a file called academia_users.txt.
 ```
