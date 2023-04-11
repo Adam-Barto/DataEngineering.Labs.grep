@@ -69,7 +69,7 @@ Ryan Howard did a poor job and used the CC field rather than the BCC field for t
 
 Use grep to identify the user with a single regex pattern.
 ```
-PROVIDE A SOLUTION HERE
+grep -E '(,184.*,38)' data/users.csv 
 ```
 
 
