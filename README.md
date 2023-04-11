@@ -59,7 +59,7 @@ grep -E '\D{1,6}@' data/users.csv
 
 Marketing research has shown that the paper business is picking up in the academia space. Corporate has requested a list of all registered users that have an edu emaill address. Use grep to find the appropriate lines and output the results to a file called academia_users.txt.
 ```
-PROVIDE A SOLUTION HERE
+grep -E '(.edu)' data/users.csv > academia_users.txt
 ```
 
 
