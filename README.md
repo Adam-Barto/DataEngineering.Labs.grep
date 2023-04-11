@@ -100,5 +100,14 @@ This regex expression will ultimately be part of an automated data pipeline so w
 * Each field must be separated by a tab character.
 
 ```
-PROVIDE A SOLUTION HERE
+grep -E '(\d+\t[A-Z]+[a-z\S ]+\t[A-Z]+[a-z\S ]+\t(?:Software|Developer).+\t[^0-9]+\t)' data/candidates_1.txt
+
+grep -E '(\d+\t[A-Z]+[a-z\S ]+\t[A-Z]+[a-z\S ]+\t(?:Software|Developer).+\t[^0-9]+\t)' data/candidates_2.txt
+
+```
+
+If I add +Pennsylvania to the end then I can search by state. At the moment, that is not what the bullet points above are asking.
+
+```
+(\d+\t[A-Z]+[a-z\S ]+\t[A-Z]+[a-z\S ]+\t(?:Software|Developer).+\t[^0-9]+\t)+Pennsylvania
 ```
